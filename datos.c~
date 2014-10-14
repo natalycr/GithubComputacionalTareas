@@ -1,0 +1,18 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+double  main(){
+  double x, y;
+  double *X;
+  double *Y;
+  x=drand48();
+  y=drand48();
+
+
+  FILE *archivo;
+  int i;
+
+  archivo=fopen(datosPy,"a");
+  fprintf(archivo, "%d %d\n", X, Y);
+  fclose(archivo);
+}
